@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Interview</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container split">
+    <div class="left-panel">
+      <h2>🎥 Video Interview Practice</h2>
+      <p>Record your expressions to improve body language & confidence.</p>
+
+      <video id="videoPreview" autoplay muted></video><br>
+
+      <button id="startVideoBtn" class="btn">🎬 Start Recording</button>
+      <button id="stopVideoBtn" class="btn red" disabled>⏹ Stop</button>
+      
+      <div class="score-indicator-container">
+        <div class="progress-circle" id="videoScoreCircle">
+          <span class="score-text" id="videoScoreText">--</span>
+        </div>
+        <p class="score-label">Overall Score</p>
+      </div>
+
+      <div id="videoFeedback" class="feedback">
+        <h3>🧠 AI Feedback</h3>
+        <p>Confidence: <span id="vidConfidence">--</span></p>
+        <p>Smile: <span id="vidSmile">--</span></p>
+        <p>Emotion: <span id="vidEmotion">--</span></p>
+      </div>
+
+      <div id="videoSuggestions" class="feedback suggestions-panel">
+          <h3>💡 Suggestions for Improvement</h3>
+          <ul id="videoSuggestionList">
+              <li>Record to see personalized tips.</li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <h3>📜 Recording History</h3>
+      <ul id="videoHistory" class="history-list"></ul>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

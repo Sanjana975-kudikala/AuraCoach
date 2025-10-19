@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Coach</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🎙️ Aura Coach</div>
+  </header>
+
+  <main class="hero">
+    <div class="hero-content">
+      <h1>Boost Your Interview Confidence</h1>
+      <p>Practice mock interviews with AI guidance and get real-time feedback on your voice tone, clarity, and facial expressions.</p>
+      <a href="{{ url_for('mode') }}" class="btn btn-gradient">🚀 Start Now</a>
+    </div>
+    
+  </main>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>🎤 Voice Analysis</h3>
+      <p>Get insights into tone, pace, and confidence while you speak.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🖼️ Facial Feedback</h3>
+      <p>Track facial expressions to ensure you look confident and approachable.</p>
+    </div>
+    <div class="feature-card">
+      <h3>📊 Performance Tracking</h3>
+      <p>Review your previous sessions and monitor improvement over time.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Aura Coach.</p>
+  </footer>
+</body>
+</html>

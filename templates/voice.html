@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Interview</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container split">
+    <div class="left-panel">
+      <h2>🎙️ Voice Interview Practice</h2>
+      <p>Record your voice to analyze clarity and confidence.</p>
+
+      <button id="startVoiceBtn" class="btn">🔴 Start Recording</button>
+      <button id="stopVoiceBtn" class="btn red" disabled>⏹ Stop</button>
+      
+      <div class="score-indicator-container">
+        <div class="progress-circle" id="voiceScoreCircle">
+          <span class="score-text" id="voiceScoreText">--</span>
+        </div>
+        <p class="score-label">Overall Score</p>
+      </div>
+
+      <div id="voiceFeedback" class="feedback">
+        <h3>🧠 AI Feedback</h3>
+        <p>Confidence: <span id="vConfidence">--</span></p>
+        <p>Clarity: <span id="vClarity">--</span></p>
+        <p>Emotion: <span id="vEmotion">--</span></p>
+        <p>Fluency: <span id="vFluency">--</span></p>
+        <p>Proficiency: <span id="vProficiency">--</span></p>
+        <p>Transcript: <span id="vTranscript">--</span></p>
+      </div>
+
+      <div id="voiceSuggestions" class="feedback suggestions-panel">
+          <h3>💡 Suggestions for Improvement</h3>
+          <ul id="voiceSuggestionList">
+              <li>Record to see personalized tips.</li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <h3>📜 Recording History</h3>
+      <ul id="voiceHistory" class="history-list"></ul>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
