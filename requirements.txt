@@ -5,3 +5,4 @@ SpeechRecognition
 textblob
 deepface
 opencv-python
+tf-keras
