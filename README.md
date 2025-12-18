@@ -1,6 +1,6 @@
-# 🎯 AuraCoach: AI Interview Coach  
+# 🎯 AuraCoach: Interview Coach  
 
-**AuraCoach** is a full-stack **AI-powered Interview Coaching Platform** that helps users **boost their confidence** by analyzing both **voice** and **non-verbal communication**.  
+**AuraCoach** is a full-stack **Interview Coaching Platform** that helps users **boost their confidence** by analyzing both **voice** and **non-verbal communication**.  
 It provides **data-driven, personalized feedback** using advanced Python-based analytics — creating a realistic **virtual interview environment**.
 
 ---
